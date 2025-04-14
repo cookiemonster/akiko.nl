@@ -24,8 +24,8 @@
 
     <!-- YouTube Section -->
     <section>
-      <h2 class="text-2xl font-semibold mb-4">🎥 Watch Akiko Paranormal on YouTube</h2>
-      <p class="mb-4 text-gray-300">Subscribe to the channel and dive into haunting cases, spiritual journeys, and the unexplained.</p>
+      <h2 class="text-2xl font-semibold mb-4">Videos</h2>
+      <p class="mb-4 text-gray-300">Subscribe to <a href="https://www.youtube.com/@AkikoParanormal" target="_blank">Akiko Paranormal YouTube channel</a> and dive into haunting cases, spiritual journeys, and the unexplained.</p>
       <div class="aspect-video">
         <iframe
         class="w-full h-72 rounded-xl"
@@ -54,11 +54,26 @@
     </section> -->
 
     <!-- Substack Section -->
-    <!-- <section>
-      <h2 class="text-2xl font-semibold mb-4">📰 Join the Substack Newsletter</h2>
-      <p class="mb-4 text-gray-300">Get exclusive content, updates, and behind-the-scenes stories delivered straight to your inbox.</p>
-      <a href="#" class="inline-block bg-white text-black px-5 py-2 rounded-full hover:bg-gray-200 transition">Subscribe on Substack</a>
-    </section> -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-4">Articles</h2>
+      <div id="substack-feed-embed"></div>
+        <script>
+          window.SubstackFeedWidget = {
+            substackUrl: "akikopararnomal.substack.com",
+            posts: 3,
+            layout: "right",
+            hidden: ["author", "reactions", "comments"],
+            colors: {
+             primary: "#ffd736",
+             secondary: "#808080",
+             background: "#000",
+    }
+          };
+        </script>
+        <script src="https://substackapi.com/embeds/feed.js" async></script>
+      <!-- <p class="mb-4 text-gray-300">Get exclusive content, updates, and behind-the-scenes stories delivered straight to your inbox.</p>
+      <a href="#" class="inline-block bg-white text-black px-5 py-2 rounded-full hover:bg-gray-200 transition">Subscribe on Substack</a> -->
+    </section>
   </main>
 
   <footer class="text-center py-6 text-gray-500 border-t border-gray-700">
